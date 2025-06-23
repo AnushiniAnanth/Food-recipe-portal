@@ -1,0 +1,132 @@
+/* Grid container for cards */
+.Cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 cards in a row */
+  gap: 2rem;
+  padding: 2rem 5%;
+  margin: 3rem auto;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1400px;
+  box-sizing: border-box;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1280px) {
+  .Cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .Cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .Cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .Cards {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+}
+
+/* Loader styles */
+.LaSquareSpin,
+.LaSquareSpin > div {
+  position: relative;
+  box-sizing: border-box;
+}
+
+.LaSquareSpin {
+  display: inline-block;
+  color: #333;
+  width: 64px;
+  height: 64px;
+}
+
+.LaSquareSpin > div {
+  width: 100%;
+  height: 100%;
+  background-color: currentColor;
+  animation: square-spin 3s cubic-bezier(0.09, 0.57, 0.49, 0.9) infinite;
+}
+
+@keyframes square-spin {
+  0% {
+    transform: perspective(100px) rotateX(0) rotateY(0);
+  }
+  25% {
+    transform: perspective(100px) rotateX(180deg) rotateY(0);
+  }
+  50% {
+    transform: perspective(100px) rotateX(180deg) rotateY(180deg);
+  }
+  75% {
+    transform: perspective(100px) rotateX(0) rotateY(180deg);
+  }
+  100% {
+    transform: perspective(100px) rotateX(0) rotateY(360deg);
+  }
+}
+
+
+
+/* Hover effect */
+.Card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Image styling */
+.Card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Card body */
+.Card-body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Title */
+.Card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1e293b;
+}
+
+/* Meta text (category & area) */
+.Card-meta {
+    font-size: 0.9rem;
+    color: #64748b;
+}
+
+/* Tags container */
+.Card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+/* Single tag */
+.Card-tag {
+    background-color: #f1f5f9;
+    color: #334155;
+    padding: 0.3rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}

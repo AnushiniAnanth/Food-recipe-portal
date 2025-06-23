@@ -1,0 +1,13 @@
+.searchbox-form {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .searchbox-form {
+    margin-left: 0;
+    padding: 0;
+  }
+}

@@ -1,0 +1,41 @@
+/* NavBar.css */
+
+.navbar-header {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  background-image: url('/assets/header-bg.jpg'); /* Adjust path if needed */
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 2rem;
+  font-weight: 800;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #d8b4fe; /* light purple on hover */
+}
+
+.navbar-icon {
+  font-size: 2.5rem !important;
+  color: #d8b4fe;
+}

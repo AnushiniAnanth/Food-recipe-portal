@@ -1,0 +1,40 @@
+
+
+.Hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    min-height: 80vh;
+    width: 100%;
+
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.6), 
+            rgba(0, 0, 0, 0.6)
+        ),
+        url(../../assets/Foody.jpg) center center / cover no-repeat;
+
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+}
+
+.Hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.Hero h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.Hero p {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    max-width: 800px;
+    margin: 0 auto;
+}

@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.theme-light {
+    --bg-background-primary: #ffffff;
+    --bg-background-secondary: #EFF0F2;
+    --bg-background-tertiary: #DEE4E7;
+    --text-copy-primary: #2d3748;
+    --text-copy-secondary: #4e545e;
+}
+
+.theme-dark {
+    --bg-background-primary: #212324;
+    --bg-background-secondary: #212832;
+    --bg-background-tertiary: #39434F;
+    --text-copy-primary: #cbd5e0;
+    --text-copy-secondary: #838991;
+    --text-copy-white: #ffffff;
+}
